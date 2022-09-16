@@ -14,4 +14,5 @@ set('repository', 'https://github.com/xong/ydeploy_demo.git');
 host('maumha.de')
     ->hostname('maumha.de')
     ->set('deploy_path', '/kunden/536664_06108/webseiten/ydeploy.maumha.de')
+    ->set('http_user', 'ssh-536664-xong')
 ;
