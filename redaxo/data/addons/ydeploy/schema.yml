@@ -287,6 +287,15 @@ tables:
             revision: { type: 'int(10) unsigned', nullable: false, default: null, extra: null }
         primaryKey:
             - id
+    rex_teilnehmer:
+        charset: utf8mb4
+        collation: utf8mb4_unicode_ci
+        columns:
+            id: { type: 'int(10) unsigned', nullable: false, default: null, extra: auto_increment }
+            name: { type: text, nullable: false, default: null, extra: null }
+            email: { type: text, nullable: false, default: null, extra: null }
+        primaryKey:
+            - id
     rex_template:
         charset: utf8mb4
         collation: utf8mb4_unicode_ci
@@ -399,6 +408,7 @@ tables:
             expanded: { type: text, nullable: false, default: null, extra: null }
             choices: { type: text, nullable: false, default: null, extra: null }
             choice_attributes: { type: text, nullable: false, default: null, extra: null }
+            no_db: { type: text, nullable: false, default: null, extra: null }
         primaryKey:
             - id
     rex_yform_history:
